@@ -60,3 +60,23 @@ textarea{
     border-radius: 5px;
     border: 2px solid #CCD595;
 }
+
+button{
+    background-color: #CCD595;
+    border: none;
+    padding: 0.5rem;
+    color: #331f19;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    background-color:  #331f19;
+    padding: 2rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #CCD595;
+}
