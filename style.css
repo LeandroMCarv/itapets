@@ -19,3 +19,26 @@ header{
     text-align: center;
 }
 
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    color: #331f19
+}
+
+img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 5px;
+}
