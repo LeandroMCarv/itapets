@@ -42,3 +42,21 @@ img{
     height: 15rem;
     border-radius: 5px;
 }
+
+fieldset{
+    border: 2px solid #CCD595;
+    border-radius: 5px;
+    padding: 1rem; 
+}
+
+legend{
+    color: #331f19;
+    padding: 0;
+}
+
+textarea{
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #CCD595;
+}
