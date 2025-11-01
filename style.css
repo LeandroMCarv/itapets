@@ -37,7 +37,8 @@ section{
 
 h2{
     font-size: 1.2rem;
-    color: #331f19
+    color: #331f19;
+    text-align: center;
 }
 
 img{
