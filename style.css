@@ -85,7 +85,7 @@ a{
     color: #CCD595;
 }
 
-.FlexContainer {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,7 +97,7 @@ a{
     flex-direction: row;
 }
 
-.FlexContainer div {
+.flex-container div {
     width: 300px;
     height: 300px;
     margin: 5px;
