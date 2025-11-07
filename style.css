@@ -20,6 +20,7 @@ header {
     padding: 2rem;
     background-color: #331f19;
     text-align: center;
+    color: #CCD595;
 }
 
 main {
@@ -29,74 +30,85 @@ main {
     gap: 2rem;
 }
 
-section {
+h2 {
+    font-size: 1.4rem;
+    color: #331f19;
+    text-align: center;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container div {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
-h2 {
-    font-size: 1.2rem;
+.flex-container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.flex-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.flex-container figcaption {
+    color: #798252;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.flex-container p {
     color: #331f19;
-    text-align: center;
-}
-
-img {
-    border-radius: 5px;
-}
-
-fieldset {
-    border: 2px solid #CCD595;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-legend {
-    color: #331f19;
-    padding: 0;
-}
-
-textarea {
-    background-color: transparent;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #CCD595;
-}
-
-button {
-    background-color: #CCD595;
-    border: none;
-    padding: 0.5rem;
-    color: #331f19;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #331f19;
-    padding: 2rem;
-    text-align: center;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #331f19;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
     color: #CCD595;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 65%;
-    height: 80vh;
-    overflow: auto;
-    flex-direction: row;
+@media (max-width: 900px) {
+    .flex-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.flex-container div {
-    width: 300px;
-    height: 300px;
-    margin: 5px;
+@media (max-width: 600px) {
+    .flex-container {
+        grid-template-columns: 1fr;
+    }
 }
