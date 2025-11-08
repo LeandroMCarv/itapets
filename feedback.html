@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ItaPets,feedback">
     <meta name="author" content="Leandro Carvalho">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylefeedback.css">
     <title>ITAPETS-Feedback</title>
 </head>
 
 <body>
-    <h1><a href="index.html">ItaPets</a></h1>
-    <p>Ficamos felizes em saber que você nos dará um retorno para nós melhorarmos sua experiência.</p>
-    <h2>Nos dê seu feedback</h2>
-    <form action="mailto:ItaPetsTeste@gmail.com" method="post" enctype="text/plain">
-        <fieldset>
-            <legend>Informações de contato</legend>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="your@example.com"><br>
-            <label for="tel">Telefone:</label>
-            <input type="text" id="tel" name="tel"><br>
-            <label for="comentarios">Comentários:</label><br>
+    <header>
+        <h1><a href="index.html">ItaPets</a></h1>
+        <p>Ficamos felizes em saber que você nos dará um retorno para nós melhorarmos sua experiência.<br>
+            Nos dê seu feedback</p>
+    </header>
+
+    <div>
+        <form action="mailto:ItaPetsTeste@gmail.com" method="post" enctype="text/plain">
+            <p>Informações de contato</p>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Marcos Dósea"><br>
+            <label for="gender">Gênero</label>
+            <label class="radio-option">
+                <input type="radio" name="gender" value="Masculino"> Masculino
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="gender" value="Feminino"> Feminino
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="gender" value="Outro"> Outro
+            </label>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="dosea@academico.ufs.br"><br>
+            <label for="tel">Telefone</label>
+            <input type="text" id="tel" name="tel" placeholder="(79)99900-2378"><br>
+            <label for="comentarios">Comentários</label><br>
             <textarea id="comentarios" name="comentarios" rows="4" cols="28"
                 placeholder="Escreva seus comentários aqui."></textarea><br>
             <button type="submit">Enviar feedback!</button>
-        </fieldset>
-    </form>
+        </form>
+    </div>
     <footer>
         <p>Formas para contato: <br>Numero: <b>3431-3431</b><br>Gmail:<b>ItaPetsTeste@gmail.com</b></p>
     </footer>

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Cabin;
+    src: url(./font/Cabin-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+:root {
+    --verdeEscuro: #798252;
+    --verdeClaro: #CCD595;
+    --branco: #f4f0ea;
+    --marrom: #331f19;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--verdeEscuro);
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--marrom);
+    text-align: center;
+    color: var(--verdeClaro);
+}
+
+form {
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    margin-top: 5.5em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 3em;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    font-size: 30px;
+    color: var(--verdeEscuro);
+    padding-bottom: 1em;
+}
+
+form input {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form button {
+    background-color: var(--verdeEscuro);
+    color: white;
+    border-radius: 20px;
+    padding: 15px 25px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    margin: 0 auto;
+}
+
+form textarea {
+    margin: 0 auto;
+}
+
+div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.radio-option input {
+    width: 15px;
+    height: 15px;
+}
+
+p {
+    font-size: 1.0rem;
+    color: var(--verdeClaro);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: var(--marrom);
+    padding: 2rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .flex-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        grid-template-columns: 1fr;
+    }
+}

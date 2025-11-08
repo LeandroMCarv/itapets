@@ -1,6 +1,13 @@
 @font-face {
     font-family: Cabin;
-    src: url(./font/Cabin-Italic-VariableFont_wdth\,wght.ttf) format("truetype");
+    src: url(./font/Cabin-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+:root {
+    --verdeEscuro: #798252;
+    --verdeClaro: #CCD595;
+    --branco: #f4f0ea;
+    --marrom: #331f19;
 }
 
 * {
@@ -10,17 +17,17 @@
 }
 
 body {
-    background-color: #f4f0ea;
-    color: #798252;
+    background-color: var(--branco);
+    color: var(--verdeEscuro);
     font-family: "Cabin", sans-serif;
     font-weight: 400;
 }
 
 header {
     padding: 2rem;
-    background-color: #331f19;
+    background-color: var(--marrom);
     text-align: center;
-    color: #CCD595;
+    color: var(--verdeClaro);
 }
 
 main {
@@ -31,8 +38,12 @@ main {
 }
 
 h2 {
-    font-size: 1.4rem;
-    color: #331f19;
+    text-align: center;
+}
+
+p {
+    font-size: 1.0rem;
+    color: var(--verdeClaro);
     text-align: center;
 }
 
@@ -47,7 +58,7 @@ h2 {
 }
 
 .flex-container div {
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -76,13 +87,13 @@ h2 {
 }
 
 .flex-container figcaption {
-    color: #798252;
+    color: var(--verdeEscuro);
     font-weight: 500;
     margin-top: 10px;
 }
 
 .flex-container p {
-    color: #331f19;
+    color: var(--marrom);
     font-weight: bold;
 }
 
@@ -92,13 +103,14 @@ a {
 }
 
 footer {
-    background-color: #331f19;
-    padding: 1rem;
+    background-color: var(--marrom);
+    padding: 2rem;
+    margin-bottom: 0px;
     text-align: center;
 }
 
 footer a {
-    color: #CCD595;
+    color: var(--verdeClaro);
 }
 
 @media (max-width: 900px) {
