@@ -122,9 +122,9 @@ footer {
     padding: 2rem;
     margin-bottom: 0px;
     text-align: center;
+    margin-top: auto;
 }
 
-/*Ajustes para tornar as telas responsivas*/
 @media (max-width: 900px) {
     form {
         width: 100%;
