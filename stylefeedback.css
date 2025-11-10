@@ -3,6 +3,7 @@
     src: url(./font/Cabin-VariableFont_wdth\,wght.ttf) format("truetype");
 }
 
+/*Estabelecimento de cores atrelados à variáveis*/
 :root {
     --verdeEscuro: #798252;
     --verdeClaro: #CCD595;
@@ -84,7 +85,7 @@ form textarea {
     border-radius: 20px;
     box-sizing: border-box;
     resize: both;
-    transition: border-color 0.3s ease; /* Adiciona uma transição suave para a cor da borda */
+    transition: border-color 0.3s ease;
 }
 
 div {
@@ -123,6 +124,7 @@ footer {
     text-align: center;
 }
 
+/*Ajustes para tornar as telas responsivas*/
 @media (max-width: 900px) {
     form {
         width: 100%;
