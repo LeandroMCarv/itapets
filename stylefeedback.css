@@ -88,9 +88,15 @@ form textarea {
     transition: border-color 0.3s ease;
 }
 
-div {
+article {
     width: 60%;
     margin: 0 auto;
+}
+
+article h2{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .radio-option {
