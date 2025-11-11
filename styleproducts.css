@@ -1,6 +1,6 @@
 @font-face {
     font-family: Cabin;
-    src: url(font/Cabin-VariableFont_wdth\,wght.ttf) format("truetype");
+    src: url("font/Cabin-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
 :root {
