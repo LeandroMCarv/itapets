@@ -57,7 +57,7 @@ p {
     margin: 0 auto;
 }
 
-.flex-container div {
+.flex-container article {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -72,7 +72,7 @@ p {
     justify-content: space-between;
 }
 
-.flex-container div:hover {
+.flex-container article:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -86,7 +86,7 @@ p {
     border-radius: 5px;
 }
 
-.flex-container figcaption {
+.flex-container h3 {
     color: var(--verdeEscuro);
     font-weight: 500;
     margin-top: 10px;
