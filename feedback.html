@@ -18,11 +18,22 @@
     </header>
 
     <article>
-        <h2>Preencha os campos abaixo:</h2>
+        <h2>Preencha os campos abaixo</h2>
         <form action="mailto:ItaPetsTeste@gmail.com" method="post" enctype="text/plain">
             <p>Informações de contato</p>
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Marcos Dósea"><br>
+
+            <div class="linha-nome-telefone">
+                <div class="linha-nome">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Marcos Dósea">
+                </div>
+
+                <div class="linha-telefone">
+                    <label for="tel">Telefone</label>
+                    <input type="text" id="tel" name="tel" placeholder="(79)99900-2378">
+                </div>
+            </div>
+
             <label>Gênero</label>
             <label class="radio-option">
                 <input type="radio" name="gender" value="Masculino"> Masculino
@@ -33,20 +44,21 @@
             <label class="radio-option">
                 <input type="radio" name="gender" value="Outro"> Outro
             </label>
+
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="dosea@academico.ufs.br"><br>
-            <label for="tel">Telefone</label>
-            <input type="text" id="tel" name="tel" placeholder="(79)99900-2378"><br>
-            <label for="comentarios">Comentários</label><br>
+            <input type="email" id="email" name="email" placeholder="dosea@academico.ufs.br">
+
+            <label for="comentarios">Comentários</label>
             <textarea id="comentarios" name="comentarios" rows="4" cols="28"
-                placeholder="Escreva seus comentários aqui."></textarea><br>
+                placeholder="Escreva seus comentários aqui."></textarea>
+
             <button type="submit">Enviar feedback!</button>
         </form>
     </article>
     <footer>
         <p>
             Formas para contato:
-        </p> 
+        </p>
         <p>
             <b>3431-3431</b>
         </p>
