@@ -68,6 +68,7 @@ form {
   display: grid;
   grid-template-columns: 5fr 5fr;
   justify-content: space-around !important;
+  border: none !important;
 }
 
 form p {
