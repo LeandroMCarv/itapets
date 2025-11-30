@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector("form");
+    const form = document.getElementById('formFeedback') || document.querySelector("form");
     const mensagemBox = document.getElementById("mensagem");
-
     if (!form) {
         console.error('Formulário não encontrado no DOM. Verifique se existe um <form> na página.');
         return;
@@ -15,13 +14,11 @@ const campos = {
 };
 
     const radios = document.querySelectorAll('input[name="gender"]');
-
     const telefoneInput = campos.telefone;
     if (telefoneInput) {
         telefoneInput.addEventListener('input', function (e) {
             const digitos = this.value.replace(/\D/g, '').slice(0, 11);
             let formatted = '';
-
             if (digitos.length <= 2) {
                 formatted = '(' + digitos;
             } else if (digitos.length <= 7) {
@@ -29,7 +26,6 @@ const campos = {
             } else {
                 formatted = '(' + digitos.slice(0, 2) + ')' + digitos.slice(2, 7) + '-' + digitos.slice(7);
             }
-
             this.value = formatted;
         });
     }
@@ -40,7 +36,15 @@ function exibirMensagem(texto, tipo) {
         mensagemBox.setAttribute('role', 'alert');
         mensagemBox.innerHTML = `
             ${texto}
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>`;
+            <button type="button" class="btn-close" aria-label="Fechar"></button>`;
+        const btnClose = mensagemBox.querySelector('.btn-close');
+        if (btnClose) {
+            btnClose.addEventListener('click', function () {
+                mensagemBox.className = 'alert d-none mt-3';
+                mensagemBox.removeAttribute('role');
+                mensagemBox.innerHTML = '';
+            });
+        }
     } else {
         alert(texto);
     }
