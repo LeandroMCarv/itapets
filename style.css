@@ -79,11 +79,12 @@ p {
 
 
 .flex-container img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     margin: 0 auto;
     border-radius: 5px;
+    image-rendering: crisp-edges;
 }
 
 .flex-container h3 {
@@ -101,6 +102,29 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.card {
+    border: none;
+    border-radius: 20px;
+}
+
+.card-title {
+    text-align: center;
+    color: var(--verdeEscuro);
+    font-weight: 500;
+}
+
+.card-img-top {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    image-rendering: crisp-edges;
+    width: 150px;
+    max-height: 150px;
+}
+
 
 footer {
     background-color: var(--marrom);

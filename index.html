@@ -8,6 +8,7 @@
     <meta name="description" content="ItaPets - Os melhores produtos para o seu pet!">
     <meta name="keywords" content="ItaPets, pets, produtos para pets, acessórios para pets">
     <meta name="author" content="Leandro Carvalho">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>ITAPETS HOME</title>
 </head>
@@ -18,100 +19,147 @@
         <p><strong>Bem-vindo ao ItaPets!</strong></p>
         <p>Aqui você encontra uma <em>variedade incrível de produtos</em> para cuidar do seu pet.</p>
     </header>
-    <main>
-        <h2>Produtos disponíveis</h2>
-        <div class="flex-container">
-            <article>
-                <a href="bola_laranja_brinquedo_pets.html">
-                    <img src="img/bola_laranja_brinquedo_petsP.webp" alt="Bolinha de brinquedo para cachorro">
-                    <h3> Bolinha para cachorro </h3>
-                    <p><b>R$20.00</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="caixa_transporte_pets_grande_branca.html">
-                    <img src="img/caixa_transporte_pets_grande_brancaP.webp" alt="Caixa de transporte para pets">
-                    <h3> Caixa de transporte </h3>
-                    <p><b>R$48.67</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="racao_premium_gato.html">
-                    <img src="img/racao_premium_gatoP.webp" alt="Ração premium para gatos com frango e vegetais">
-                    <h3> Comida para gatos </h3>
-                    <p><b>R$15.00</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="areia_gatos_premium.html">
-                    <img src="img/areia_gatos_premiumP.webp" alt="Areia para gatos">
-                    <h3> Areia para gatos </h3>
-                    <p><b>R$15.00</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="coleira_ajustavel_marrom_cachorro.html">
-                    <img src="img/coleira_ajustavel_marrom_cachorroP.webp" alt="Coleira para gatos">
-                    <h3> Coleira para cachorros </h3>
-                    <p><b>R$73.99</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="racao_premium_cachorro.html">
-                    <img src="img/racao_premium_cachorroP.webp"
-                        alt="Ração premium para cachorro com frango e vegetais">
-                    <h3> Comida para cachorros </h3>
-                    <p><b>R$15.00</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="frisbe_brinquedo_amarelo_cachorro.html">
-                    <img src="img/frisbe_brinquedo_amarelo_cachorroP.webp" alt="Frisbe de brinquedo para cachorros">
-                    <h3> Frisbe </h3>
-                    <p><b>R$14.77</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="fonte_agua_pets.html">
-                    <img src="img/fonte_agua_petsP.webp" alt="Fonte de água para seu pet">
-                    <h3> Fonte de água </h3>
-                    <p><b>R$15.21</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="tigela_racao_pets_gato_cachorro.html">
-                    <img src="img/tigela_racao_pets_gato_cachorroP.webp" alt="Tigela para pôr comida para seus pets">
-                    <h3> Tigela para ração </h3>
-                    <p><b>R$7.91</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="vitamina_pets_hepvet.html">
-                    <img src="img/vitamina_pets_hepvetP.webp" alt="Suplementos de vitaminas para pets">
-                    <h3> Vitaminas para pets </h3>
-                    <p><b>R$43.07</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="fantasia_cachorro_pequena_dinossauro_verde.html">
-                    <img src="img/fantasia_cachorro_pequena_dinossauro_verdeP.webp"
-                        alt="Fantasia de dinossauro para cachorro">
-                    <h3> Fantasia para cachorro </h3>
-                    <p><b>R$49.99</b></p>
-                </a>
-            </article>
-            <article>
-                <a href="cama_preta_pets_grande.html">
-                    <img src="img/cama_preta_pets_grandeP.webp" alt="Cama para seu pet">
-                    <h3> Cama para pets </h3>
-                    <p><b>R$74.60</b></p>
-                </a>
-            </article>
+    <main class="container my-5">
+        <h2 class="text-center mb-5">Produtos disponíveis</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="bola_laranja_brinquedo_pets.html" class="text-decoration-none text-reset">
+                        <img src="img/bola_laranja_brinquedo_petsP.webp" class="card-img-top" alt="Bolinha de brinquedo para cachorro">
+                        <div class="card-body">
+                            <h3 class="card-title">Bolinha para cachorro</h3>
+                            <p class="card-text lead text-success"><strong>R$20.00</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="caixa_transporte_pets_grande_branca.html" class="text-decoration-none text-reset">
+                        <img src="img/caixa_transporte_pets_grande_brancaP.webp" class="card-img-top" alt="Caixa de transporte para pets">
+                        <div class="card-body">
+                            <h3 class="card-title">Caixa de transporte</h3>
+                            <p class="card-text lead text-success"><strong>R$48.67</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="racao_premium_gato.html" class="text-decoration-none text-reset">
+                        <img src="img/racao_premium_gatoP.webp" class="card-img-top" alt="Ração premium para gatos com frango e vegetais">
+                        <div class="card-body">
+                            <h3 class="card-title">Comida para gatos</h3>
+                            <p class="card-text lead text-success"><strong>R$15.00</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="areia_gatos_premium.html" class="text-decoration-none text-reset">
+                        <img src="img/areia_gatos_premiumP.webp" class="card-img-top" alt="Areia para gatos">
+                        <div class="card-body">
+                            <h3 class="card-title">Areia para gatos</h3>
+                            <p class="card-text lead text-success"><strong>R$15.00</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="coleira_ajustavel_marrom_cachorro.html" class="text-decoration-none text-reset">
+                        <img src="img/coleira_ajustavel_marrom_cachorroP.webp" class="card-img-top" alt="Coleira para gatos">
+                        <div class="card-body">
+                            <h3 class="card-title">Coleira para cachorros</h3>
+                            <p class="card-text lead text-success"><strong>R$73.99</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="racao_premium_cachorro.html" class="text-decoration-none text-reset">
+                        <img src="img/racao_premium_cachorroP.webp" class="card-img-top" alt="Ração premium para cachorro com frango e vegetais">
+                        <div class="card-body">
+                            <h3 class="card-title">Comida para cachorros</h3>
+                            <p class="card-text lead text-success"><strong>R$15.00</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="frisbe_brinquedo_amarelo_cachorro.html" class="text-decoration-none text-reset">
+                        <img src="img/frisbe_brinquedo_amarelo_cachorroP.webp" class="card-img-top" alt="Frisbe de brinquedo para cachorros">
+                        <div class="card-body">
+                            <h3 class="card-title">Frisbe</h3>
+                            <p class="card-text lead text-success"><strong>R$14.77</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="fonte_agua_pets.html" class="text-decoration-none text-reset">
+                        <img src="img/fonte_agua_petsP.webp" class="card-img-top" alt="Fonte de água para seu pet">
+                        <div class="card-body">
+                            <h3 class="card-title">Fonte de água</h3>
+                            <p class="card-text lead text-success"><strong>R$15.21</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="tigela_racao_pets_gato_cachorro.html" class="text-decoration-none text-reset">
+                        <img src="img/tigela_racao_pets_gato_cachorroP.webp" class="card-img-top" alt="Tigela para pôr comida para seus pets">
+                        <div class="card-body">
+                            <h3 class="card-title">Tigela para ração</h3>
+                            <p class="card-text lead text-success"><strong>R$7.91</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="vitamina_pets_hepvet.html" class="text-decoration-none text-reset">
+                        <img src="img/vitamina_pets_hepvetP.webp" class="card-img-top" alt="Suplementos de vitaminas para pets">
+                        <div class="card-body">
+                            <h3 class="card-title">Vitaminas para pets</h3>
+                            <p class="card-text lead text-success"><strong>R$43.07</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="fantasia_cachorro_pequena_dinossauro_verde.html" class="text-decoration-none text-reset">
+                        <img src="img/fantasia_cachorro_pequena_dinossauro_verdeP.webp" class="card-img-top" alt="Fantasia de dinossauro para cachorro">
+                        <div class="card-body">
+                            <h3 class="card-title">Fantasia para cachorro</h3>
+                            <p class="card-text lead text-success"><strong>R$49.99</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <article class="card h-100 shadow-sm">
+                    <a href="cama_preta_pets_grande.html" class="text-decoration-none text-reset">
+                        <img src="img/cama_preta_pets_grandeP.webp" class="card-img-top" alt="Cama para seu pet">
+                        <div class="card-body">
+                            <h3 class="card-title">Cama para pets</h3>
+                            <p class="card-text lead text-success"><strong>R$74.60</strong></p>
+                        </div>
+                    </a>
+                </article>
+            </div>
         </div>
     </main>
     <footer>
         <p><a href="feedback.html">Nos dê seu feedback (●'◡'●)</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
