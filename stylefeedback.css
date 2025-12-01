@@ -26,6 +26,7 @@ body {
 header {
   background-color: var(--marrom);
   color: var(--verdeClaro);
+  padding: 0.4rem;
 }
 
 footer {
