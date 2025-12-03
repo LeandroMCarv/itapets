@@ -30,6 +30,31 @@ header {
     color: var(--verdeClaro);
 }
 
+.filter-container {
+    display: inline-block;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.filter-container label {
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+#filter-select {
+    width: auto;
+    padding: 0.5rem auto;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+#filter-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
 main {
     padding: 2rem;
     display: flex;
