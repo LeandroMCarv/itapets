@@ -1,27 +1,34 @@
-🐾 Itapets
+# 🐾 Itapets
 
-Projeto desenvolvido utilizando HTML, CSS e JavaScript, com o objetivo de praticar e consolidar conhecimentos em desenvolvimento web front-end, aplicado na disciplina de Tecnologias de Desenvolvimento para Internet (TDI).
+Projeto desenvolvido com **HTML, CSS e JavaScript**, com o objetivo de praticar e consolidar conhecimentos em **desenvolvimento web front-end**, aplicado na disciplina de **Tecnologias de Desenvolvimento para Internet (TDI)**.
 
-🌐 Deploy: https://itapets.vercel.app
+🌐 **Deploy:** https://itapets.vercel.app  
+📂 **Repositório:** https://github.com/LeandroMCarv/itapets  
 
-📂 Repositório: https://github.com/LeandroMCarv/itapets
+---
 
-📌 Sobre o Projeto
+## 📌 Sobre o Projeto
 
-O Itapets é um site de uma loja fictícia de produtos para pets, contendo páginas individuais de produtos, área de feedback e funcionalidades interativas desenvolvidas com JavaScript.
+O **Itapets** é um site de uma **loja fictícia de produtos para pets**, contendo:
 
-O projeto foca em:
+- Página inicial com navegação
+- Páginas individuais para cada produto
+- Área de feedback
+- Funcionalidades interativas desenvolvidas com JavaScript
 
-Estruturação semântica com HTML5
+O projeto tem como foco principal a aplicação de boas práticas de **front-end**, incluindo:
 
-Estilização organizada com CSS3
+- Estruturação semântica com **HTML5**
+- Estilização organizada e responsiva com **CSS3**
+- Interatividade e lógica com **JavaScript**
+- Organização de arquivos e separação de responsabilidades
 
-Interatividade e lógica com JavaScript
+---
 
-Organização de arquivos e boas práticas de front-end
+## 🗂️ Estrutura do Projeto
 
-🗂️ Estrutura do Projeto
-📁 itapets/
+```
+itapets/
 ├── assets/
 │   ├── font/
 │   └── img/
@@ -48,55 +55,57 @@ Organização de arquivos e boas práticas de front-end
 │   └── caixa_transporte_pets_grande_branca.html
 ├── .gitignore
 └── index.html
+```
 
-📁 Descrição das Pastas
+---
 
-assets/ → Contém imagens e fontes utilizadas no site
+## 📁 Descrição das Pastas
 
-css/ → Arquivos de estilização do projeto
+- **assets/** → Imagens e fontes utilizadas no site  
+- **css/** → Arquivos de estilização  
+- **js/** → Scripts JavaScript responsáveis pelas interações  
+- **pages/** → Páginas individuais dos produtos  
+- **index.html** → Página inicial do site  
 
-js/ → Scripts JavaScript responsáveis pelas interações
+---
 
-pages/ → Páginas individuais dos produtos
+## 🚀 Tecnologias Utilizadas
 
-index.html → Página inicial do site
+- HTML5  
+- CSS3  
+- JavaScript  
+- Bootstrap  
 
-🚀 Tecnologias Utilizadas
+---
 
-HTML5
+## ✨ Funcionalidades
 
-CSS3
+✔️ Página inicial com navegação intuitiva  
+✔️ Páginas individuais de produtos  
+✔️ Área de feedback com interatividade em JavaScript  
+✔️ Layout responsivo  
+✔️ Separação clara entre estrutura, estilo e lógica  
 
-JavaScript
+---
 
-Bootstrap
+## 🛠️ Como Executar o Projeto
 
-✨ Funcionalidades
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/LeandroMCarv/itapets.git
+   ```
 
-✔️ Página inicial com navegação
+2. Abra o arquivo `index.html` no navegador de sua preferência.
 
-✔️ Páginas individuais de produtos
+---
 
-✔️ Área de feedback com JavaScript
+## 📄 Licença
 
-✔️ Layout responsivo
+Este projeto foi desenvolvido **exclusivamente para fins educacionais**.  
+Sinta-se à vontade para estudar, modificar e reutilizar o código.
 
-✔️ Separação clara de estilos e scripts
+---
 
-🛠️ Como Executar o Projeto
+## 👨‍💻 Autor
 
-Clone o repositório:
-
-git clone https://github.com/LeandroMCarv/itapets.git
-
-
-Abra o arquivo index.html no navegador de sua preferência.
-
-📄 Licença
-
-Este projeto foi desenvolvido para fins educacionais.
-Sinta-se livre para estudar, modificar e reutilizar o código.
-
-👨‍💻 Autor
-
--[@LeandroMCarv](https://github.com/LeandroMCarv)
+[@LeandroMCarv](https://github.com/LeandroMCarv)
